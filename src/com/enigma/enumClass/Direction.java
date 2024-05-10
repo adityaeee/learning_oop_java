@@ -9,10 +9,10 @@ public enum Direction {
 
     NORTH, EAST, SOUTH, WEST;
 
-    public Direction turnRight(){
-        return Direction.values()[(this.ordinal()+1) % values().length];
-    }public Direction turnLeft(){
-        return Direction.values()[(this.ordinal() + values().length - 1) % values().length];
-    }
+        public Direction turnRight(){
+            return Direction.values()[(this.ordinal()+1) % values().length];
+        }public Direction turnLeft(){
+            return Direction.values()[(this.ordinal() + values().length - 1) % values().length];
+        }
 
 }
